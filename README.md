@@ -22,4 +22,6 @@ $$S_{\mu,t} = \frac{v_1 }{v_1+1} \cdot \left(\frac{\dfrac{x(v_1+v_2)}{v_2 - 2}}{
 \\ S_{v_1,t} = \left[\dfrac{1}{2}\psi\left(\frac{v_{1,t} + v_2}{2}\right) - \dfrac{1}{2}\psi\left(\frac{v_{1,t} }{2}\right) + \dfrac{1}{2}\left(\log\left(\dfrac{v_{1,t}}{v_2 - 2}\right) +1\right)  \right]  (v_{1,t} -2) + \\ +
 \\ S_{v_2,t} = $$
 
-will come back tomorrow, writting code is easier than writting readme files for me, why people praise chatgpt at all
+... 
+
+I am still to complete the description, due to my personal circumstances had to delay all of my side projects, but I shall make code available here.
