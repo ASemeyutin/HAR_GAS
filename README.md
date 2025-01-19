@@ -19,13 +19,13 @@ $$v_{2,t+1} = \omega_{v_2} + \alpha_{v_2}\cdot S_{v_2,t} + \beta_{ v_2, t}\cdot 
 where 
 ```math
 \begin{aligned}
-S_{\mu,t} &= \frac{v_1 }{v_1+1} \cdot \left(\frac{\dfrac{x(v_1+v_2)}{v_2 - 2}}{1+\dfrac{x \cdot v_1}{\mu_t(v_2 -2)}} - \mu_t\right); \\
-S_{v_1,t} &= \left[\dfrac{1}{2}\psi\left(\frac{v_{1,t} + v_2}{2}\right) - \dfrac{1}{2}\psi\left(\frac{v_{1,t} }{2}\right) + \dfrac{1}{2}\left(\log\left(\dfrac{v_{1,t}}{v_2 - 2}\right) +1\right)  \right]  (v_{1,t} - 2) + \\
-          &+ \left[\dfrac{1}{2}\log\left(\dfrac{x}{\mu_t}\right) - \dfrac{1}{2}\log\left(1 + \dfrac{x \cdot v_{1,t}}{\mu_t(v_2 -2)} \right) \right] (v_{1,t} - 2) - \\
-          &- \left[\dfrac{v_{1,t} + v_2}{2}\cdot \dfrac{\frac{x}{\mu_t(v_2 - 2)}}{1+\frac{x \cdot v_{1,t}}{\mu_t(v_2 - 2)}}  \right] (v_{1,t} - 2); \\
-S_{v_2,t} &= \left[ \dfrac{1}{2}\psi\left(\frac{v_{1,t} + v_{2,t}}{2}\right) - \dfrac{1}{2}\psi\left(\frac{v_{2,t} }{2}\right) + \dfrac{v_{1,t}}{2 (v_{2,t}-1)}  \right]  (v_{2,t} - 2) - \\
-          &- \left[ \dfrac{1}{2}\log\left(1 + \dfrac{x \cdot v_{1,t}}{\mu_t(v_{2,t} -2)} \right) \right] (v_{2,t} - 2) + \\
-          &+ \left[\dfrac{v_{1,t} + v_{2,t}}{2}\cdot \dfrac{\frac{x \cdot v_{1,t}}{\mu_t(v_{2,t} - 2)^2}}{1+\frac{x \cdot v_{1,t}}{\mu_t(v_{2,t} - 2)}}  \right] (v_{2,t} - 2),
+S_{\mu,t} &=& \frac{v_1 }{v_1+1} \cdot \left(\frac{\dfrac{x(v_1+v_2)}{v_2 - 2}}{1+\dfrac{x \cdot v_1}{\mu_t(v_2 -2)}} - \mu_t\right); \\
+S_{v_1,t} &=& \left[\dfrac{1}{2}\psi\left(\frac{v_{1,t} + v_2}{2}\right) - \dfrac{1}{2}\psi\left(\frac{v_{1,t} }{2}\right) + \dfrac{1}{2}\left(\log\left(\dfrac{v_{1,t}}{v_2 - 2}\right) +1\right)  \right]  (v_{1,t} - 2) + \\
+          &+& \left[\dfrac{1}{2}\log\left(\dfrac{x}{\mu_t}\right) - \dfrac{1}{2}\log\left(1 + \dfrac{x \cdot v_{1,t}}{\mu_t(v_2 -2)} \right) \right] (v_{1,t} - 2) - \\
+          &-& \left[\dfrac{v_{1,t} + v_2}{2}\cdot \dfrac{\frac{x}{\mu_t(v_2 - 2)}}{1+\frac{x \cdot v_{1,t}}{\mu_t(v_2 - 2)}}  \right] (v_{1,t} - 2); \\
+S_{v_2,t} &=& \left[ \dfrac{1}{2}\psi\left(\frac{v_{1,t} + v_{2,t}}{2}\right) - \dfrac{1}{2}\psi\left(\frac{v_{2,t} }{2}\right) + \dfrac{v_{1,t}}{2 (v_{2,t}-1)}  \right]  (v_{2,t} - 2) - \\
+          &-& \left[ \dfrac{1}{2}\log\left(1 + \dfrac{x \cdot v_{1,t}}{\mu_t(v_{2,t} -2)} \right) \right] (v_{2,t} - 2) + \\
+          &+& \left[\dfrac{v_{1,t} + v_{2,t}}{2}\cdot \dfrac{\frac{x \cdot v_{1,t}}{\mu_t(v_{2,t} - 2)^2}}{1+\frac{x \cdot v_{1,t}}{\mu_t(v_{2,t} - 2)}}  \right] (v_{2,t} - 2),
 \end{aligned}
 ```
 with $\Gamma$ and $\psi$ denoting standard gamma and digamma mathematical functions, and $v_{1,t} = 2 + \exp(S_{v_{1,t}})$ and $v_{2,t} = 2 + \exp(S_{v_{2,t}})$ to ensure that time-varying degrees of freedom satistfy **F distribution** requirements. Note that $\mu_{l_1,t} = l^{-1} \sum_{i=0}^{l-1} x_{t-i}$ with $l_2 = 12$ and $l_3 = 60$ respectively. By allowing different combinations of parameters to vary over time, the above specification provides several different models under the **F distribution** for realised volatility. Typically the biger (longer) is the sample the more value can be harvested from allowing additional parameters to vary over time; in practice, time varying mean (conditional realised volatility) shall be sufficient in most of the cases. To illustrate, below is the IBM conditional realised volatility and its time-varying density (time-varying first and second parameters of the **F distribution** model specification):
