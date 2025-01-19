@@ -9,13 +9,13 @@ To simplify, Opschoor & Lucas (2023) specification relies on the **F distributio
 $$f(x)=\frac{\Gamma((v_1 + v_2)/2)}{\Gamma(v_1/2)\cdot\Gamma(v_2/2)}\cdot\frac{x^{(v_1-2)/2} \cdot \left(\dfrac{v_1}{\mu (v_2 -2)} \right)^{v_1/2}}{\left(1+\dfrac{v_1}{v_2 -2}\cdot\dfrac{x}{\mu}\right)^{(v_1+v_2)/2}}$$ 
 
 **F probability density function** and dynamic parameters for
-
-$$\mu_{t+1} = \omega_{\mu} + \alpha_{\mu}\cdot S_{\mu,t} + \beta_{\mu_1, t}\cdot \mu_{l_1,t} + \beta_{\mu_2, t}\cdot \mu_{l_2,t} + \beta_{\mu_3, t}\cdot \mu_{l_3,t};$$
-
-$$v_{1,t+1} = \omega_{v_1} + \alpha_{v_1}\cdot S_{v_1,t} + \beta_{ v_1, t}\cdot v_{1,t};$$
-
-$$v_{2,t+1} = \omega_{v_2} + \alpha_{v_2}\cdot S_{v_2,t} + \beta_{ v_2, t}\cdot v_{2,t},$$ 
-
+```math
+\begin{aligned}
+\mu_{t+1} &=& \omega_{\mu} + \alpha_{\mu}\cdot S_{\mu,t} + \beta_{\mu_1, t}\cdot \mu_{l_1,t} + \beta_{\mu_2, t}\cdot \mu_{l_2,t} + \beta_{\mu_3, t}\cdot \mu_{l_3,t}; \\
+v_{1,t+1} &=& \omega_{v_1} + \alpha_{v_1}\cdot S_{v_1,t} + \beta_{ v_1, t}\cdot v_{1,t}; \\
+v_{2,t+1} &=& \omega_{v_2} + \alpha_{v_2}\cdot S_{v_2,t} + \beta_{ v_2, t}\cdot v_{2,t},  
+\end{aligned}
+```
 where 
 ```math
 \begin{aligned}
