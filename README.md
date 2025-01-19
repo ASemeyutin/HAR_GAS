@@ -43,6 +43,6 @@ Short description of the R files:
 3. 2_HAR_GAS_EST.R estimates HAR GAS model(s) parameter estimations using the standard BFGS optimisation routine.
 4. 3_HAR_GAS_ILL.R replicates the figures above (comb_gif_r1.gif and comb_gif_r2.gif). 
 ````
-Finally, 1_GAS_FUN.R scales the score function with $ 2\mu_t^2(v_1 + 1)$ in the mean equation to allow for the curvature in the log-conditional density with respect to $\mu_t$ and parametrisizes intercepts in the degrees of freedom equations as the unconditional mean of the time-varying parameters similar to the original paper (other parameter restrictions are arbitrary and are drawn from the Table summarising statistics of the ML parameter estimates).  
+Finally, 1_GAS_FUN.R scales the score function with $2\mu_t^2(v_1 + 1)$ in the mean equation to allow for the curvature in the log-conditional density with respect to $\mu_t$ and parametrisizes intercepts in the degrees of freedom equations as the unconditional mean of the time-varying parameters similar to the original paper (other parameter restrictions are arbitrary and are drawn from the Table summarising statistics of the ML parameter estimates).  
 
 Opschoor, A., & Lucas, A. (2023). Time-varying variance and skewness in realized volatility measures. *International Journal of Forecasting, 39*(2), 827-840.
